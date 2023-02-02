@@ -105,7 +105,7 @@ module.exports = {
     minimize: true,
   },
   devServer: {
-    port: 7777,
+    port: 7771,
     hot: true,
     compress: true,
     watchFiles: ['./src/*'],
