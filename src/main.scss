@@ -50,3 +50,21 @@ h1 {
     background-size: contain;
     filter: drop-shadow(5px 5px 12px #4b93fe) drop-shadow(-5px -5px 12px #ffffff);
 }
+
+.test {
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.test2 {
+    background-image: url('./assets/images/hero/clouds-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.test3 {
+    background-image: url('./assets/images/menu/button-call-me-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
