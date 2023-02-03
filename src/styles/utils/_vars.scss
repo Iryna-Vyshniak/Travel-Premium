@@ -13,3 +13,8 @@ $reviews-text-color: rgba(29, 26, 26, 1);
 
 $bg_project: rgb(226, 211, 206);
 $bg-gradient-hero: linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
+
+// responsive index for size
+$index: calc(1vw + 1vh); // index for viewport aspect ratio
+
+$transition: 750ms cubic-bezier(.075, .5, 0, 1);
