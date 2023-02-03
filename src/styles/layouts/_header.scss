@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    max-width: 100%;
+    min-height: $header-height;
+    background: transparent;
+    backdrop-filter: blur(7px);
+}
+
+.header__container {
+    width: 1348px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 121px;
+    height: 63.56px;
+}

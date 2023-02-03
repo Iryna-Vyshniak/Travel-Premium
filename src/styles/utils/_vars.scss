@@ -1,9 +1,15 @@
+// header
+$header-height: 3.9725rem;
+
+// colours
 $first-text-color: rgba(12, 11, 16, 1);
 $secondary-text-color: rgb(255, 255, 255);
-$after-title--color-light: #79655E;
-$after-title--color-dark: #000000;
+$after-title--color-light: rgb(121, 101, 94);
+$after-title--color-dark: rgb(0, 0, 0);
+
+$hero-title-color: rgb(252, 252, 252);
 
 $reviews-text-color: rgba(29, 26, 26, 1);
 
-$bg_project: #E2D3CE;
+$bg_project: rgb(226, 211, 206);
 $bg-gradient-hero: linear-gradient(rgb(196, 196, 196), rgb(196, 196, 196));
