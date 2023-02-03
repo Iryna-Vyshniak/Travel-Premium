@@ -1,28 +1,41 @@
 @import '~normalize.css';
-@import './styles/roboto.css';
+@import './styles/fonts.css';
+@import "./styles/utils/vars";
 
 $color: #c3deffd0;
 
 html {
     min-height: 100vh;
-    background: url('./assets/images/cream-paper.png'), linear-gradient(to bottom, rgb(255, 255, 255), rgb(3, 193, 251));
-    background-repeat: repeat;
-    background-attachment: fixed;
 }
 
 body {
-    display: grid;
-    transition: all .5s;
     min-height: 100vh;
-    user-select: none;
+    transition: all .5s;
     font-size: responsive;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
-.section {
+.hero {
+    position: relative;
     margin: 0 auto;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    width: 100vw;
+    min-height: 960px;
+
+    background-image: url('./assets/images/hero/sky@2x-desktop.png'), $bg-gradient-hero;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__lake {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 [class*="__container"] {
@@ -32,39 +45,21 @@ body {
     max-width: 83.125rem;
 }
 
-h1 {
-    font-size: 50px;
+.hero__pre-title {
+    margin: 0 auto;
+    max-width: 140px;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 98.5%;
     text-align: center;
-    color: $color;
-    filter: drop-shadow(1px 1px 0.5px #004aba) drop-shadow(-1px -1px 1px #ffffff);
-    text-align: center;
-    color: $color;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #0C0B10;
 }
 
 .section__logo {
     margin: 0 auto;
     height: 22.5rem;
     width: 22.5rem;
-    background-image: url('./assets/images/webpack-logo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    filter: drop-shadow(5px 5px 12px #4b93fe) drop-shadow(-5px -5px 12px #ffffff);
-}
-
-.test {
-    max-width: 500px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.test2 {
-    background-image: url('./assets/images/hero/clouds-desktop.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.test3 {
-    background-image: url('./assets/images/menu/button-call-me-desktop.png');
-    background-repeat: no-repeat;
-    background-size: contain;
 }
